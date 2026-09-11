@@ -155,3 +155,61 @@ footer {
   place-items: center;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .container {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-5-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo,
+  .button {
+    width: 80px;
+  }
+  .menu {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .container .hero-layout {
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    order: -1;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-5-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content,
+  .hero-image,
+  .grid-3-cols .item,
+  .grid-4-cols .item,
+  .grid-5-cols .item {
+    height: 250px;
+  }
+}
