@@ -205,11 +205,19 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-content,
-  .hero-image,
-  .grid-3-cols .item,
-  .grid-4-cols .item,
   .grid-5-cols .item {
     height: 250px;
+  }
+  .hero-content {
+    height: 267px;
+  }
+  .hero-image {
+    height: 491px;
+  }
+  .grid-3-cols .item {
+    height: 420px;
+  }
+  .grid-4-cols .item {
+    height: 300px;
   }
 }
